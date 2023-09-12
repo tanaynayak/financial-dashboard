@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Dashboard</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/custom_styles.css') }}" rel="stylesheet">
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.0.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Financial Dashboard</h1>
+    {{ div|safe }}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.0.min.js"></script>
+<script src="{{ url_for('static', filename='js/custom_scripts.js') }}"></script>
+{{ script|safe }}
+</body>
+</html>
